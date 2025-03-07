@@ -55,6 +55,19 @@
             height: 315px;
             margin-top: 10px;
         }
+        .invitation-button {
+            background-color: #d63384;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .invitation-button:hover {
+            background-color: #b0256b;
+        }
     </style>
 </head>
 <body>
@@ -73,7 +86,7 @@
         <!-- Секция приглашения -->
         <div class="invitation-section">
             <h2>Приглашение</h2>
-            <button onclick="showInvitation()">Посмотреть приглашение</button>
+            <button class="invitation-button" onclick="showInvitation()">📜 Открыть приглашение</button>
             <div id="invitation" style="display:none; margin-top:20px;">
                 <img src="ТАк.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
             </div>
@@ -105,10 +118,6 @@
             <div class="photo-item">
                 <img src="WhatsApp Image 2025-03-07 at 20.46.39.jpeg" alt="Фото 6">
                 <p>"Спасибо за вашу доброту и улыбки!"</p>
-            </div>
-            <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (1).jpeg" alt="Фото 7">
-                <p>"Вы достойны самого лучшего!"</p>
             </div>
         </div>
     </div>
