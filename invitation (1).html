@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на вечер 8 Марта</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 30%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .invite-text {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #d63384;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #b0256c;
+        }
+        .photo-gallery {
+            margin-top: 20px;
+        }
+        .photo-gallery img {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Приглашение на праздничный вечер 8 Марта</h1>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/video1" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/video2" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/video3" allowfullscreen></iframe>
+        </div>
+        <p class="invite-text">Дорогие гости! Приглашаем вас на праздничный вечер в честь 8 Марта.</p>
+        <button class="button" onclick="showInvitation()">Посмотреть приглашение</button>
+        <p><strong>Место:</strong> <a href="https://2gis.kz/qyzylorda/geo/70000001059087937" target="_blank">Ыдырысова 66, Кызылорда</a></p>
+        <p><strong>Время:</strong> 15:00</p>
+        <div id="invitation" style="display:none; margin-top:20px;">
+            <img src="invitation.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
+        </div>
+        <div class="photo-gallery">
+            <h2>Фотогалерея</h2>
+            <img src="photo1.jpg" alt="Фото 1">
+            <img src="photo2.jpg" alt="Фото 2">
+            <img src="photo3.jpg" alt="Фото 3">
+        </div>
+    </div>
+    <script>
+        function showInvitation() {
+            document.getElementById('invitation').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
