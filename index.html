@@ -20,42 +20,14 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .video-container {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-        iframe {
-            width: 30%;
-            height: 200px;
-            border-radius: 10px;
-        }
-        .invite-text {
-            font-size: 20px;
-            margin: 20px 0;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
-            color: white;
-            background-color: #d63384;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .button:hover {
-            background-color: #b0256c;
-        }
         .photo-gallery {
             margin-top: 20px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
         .photo-gallery .photo-item {
-            margin-bottom: 20px;
             text-align: center;
             position: relative;
             border: 5px solid #d63384;
@@ -65,96 +37,14 @@
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
         }
         .photo-gallery img {
-            width: 400px;
+            width: 250px;
             height: auto;
             border-radius: 10px;
         }
         .photo-gallery p {
             font-style: italic;
             font-family: 'Brush Script MT', cursive;
-            font-size: 24px;
-            margin-top: 10px;
-            color: #555;
-        }
-        .sticker {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: #ffcc00;
-            color: #fff;
-            font-size: 16px;
-            padding: 5px 10px;
-            border-radius: 50%;
-            font-weight: bold;
-        }
-    </style>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение на вечер 8 Марта</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            background-color: #ffe6f2;
-            color: #333;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .video-container {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-        iframe {
-            width: 30%;
-            height: 200px;
-            border-radius: 10px;
-        }
-        .invite-text {
-            font-size: 20px;
-            margin: 20px 0;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
             font-size: 18px;
-            color: white;
-            background-color: #d63384;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .button:hover {
-            background-color: #b0256c;
-        }
-        .photo-gallery {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .photo-gallery .photo-item {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .photo-gallery img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-        .photo-gallery p {
-            font-style: italic;
             margin-top: 10px;
             color: #555;
         }
@@ -163,47 +53,32 @@
 <body>
     <div class="container">
         <h1>Приглашение на праздничный вечер 8 Марта</h1>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/video1" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/video2" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/video3" allowfullscreen></iframe>
-        </div>
-        <p class="invite-text">Дорогие гости! Приглашаем вас на праздничный вечер в честь 8 Марта.</p>
-        <button class="button" onclick="showInvitation()">Посмотреть приглашение</button>
-        <p><strong>Место:</strong> <a href="https://2gis.kz/qyzylorda/geo/70000001059087937" target="_blank">Ыдырысова 66, Кызылорда</a></p>
-        <p><strong>Время:</strong> 15:00</p>
+        <button onclick="showInvitation()">Посмотреть приглашение</button>
         <div id="invitation" style="display:none; margin-top:20px;">
-            <img src="invitation.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
+            <img src="ТАк.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
         </div>
         <div class="photo-gallery">
             <h2>Фотогалерея</h2>
             <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.31.23.jpeg" alt="Фото 1">
-                <p>"Женщина – это улыбка, свет и вдохновение."</p>
+                <img src="WhatsApp Image 2025-03-07 at 19.31.22.jpeg" alt="Фото 1">
             </div>
             <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.31.24.jpeg" alt="Фото 2">
-                <p>"Красота женщины в её глазах и доброте."</p>
+                <img src="WhatsApp Image 2025-03-07 at 19.31.23.jpeg" alt="Фото 2">
             </div>
             <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (1).jpeg" alt="Фото 3">
-                <p>"Ты – воплощение нежности и любви."</p>
+                <img src="WhatsApp Image 2025-03-07 at 19.31.23 (1).jpeg" alt="Фото 3">
             </div>
             <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (2).jpeg" alt="Фото 4">
-                <p>"Сияй, ведь этот мир прекрасен благодаря тебе!"</p>
+                <img src="WhatsApp Image 2025-03-07 at 19.31.24.jpeg" alt="Фото 4">
             </div>
             <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (3).jpeg" alt="Фото 5">
-                <p>"Твоя улыбка – луч солнца в пасмурный день."</p>
+                <img src="WhatsApp Image 2025-03-07 at 19.33.20.jpeg" alt="Фото 5">
             </div>
             <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.33.20.jpeg" alt="Фото 6">
-                <p>"Женщина – это нежность, доброта и любовь."</p>
+                <img src="WhatsApp Image 2025-03-07 at 20.46.39.jpeg" alt="Фото 6">
             </div>
             <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 20.46.39.jpeg" alt="Фото 7">
-                <p>"Ты достойна восхищения каждый день!"</p>
+                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (1).jpeg" alt="Фото 7">
             </div>
         </div>
     </div>
