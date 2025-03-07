@@ -20,14 +20,16 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .video-section, .invitation-section, .photo-gallery {
+            margin-top: 30px;
+        }
         .photo-gallery {
-            margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
         }
-        .photo-gallery .photo-item {
+        .photo-item {
             text-align: center;
             position: relative;
             border: 5px solid #d63384;
@@ -43,42 +45,70 @@
         }
         .photo-gallery p {
             font-style: italic;
-            font-family: 'Brush Script MT', cursive;
-            font-size: 18px;
+            font-size: 16px;
             margin-top: 10px;
             color: #555;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Приглашение на праздничный вечер 8 Марта</h1>
-        <button onclick="showInvitation()">Посмотреть приглашение</button>
-        <div id="invitation" style="display:none; margin-top:20px;">
-            <img src="ТАк.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
+        <h1>Праздничный вечер 8 Марта</h1>
+        
+        <!-- Секция видео -->
+        <div class="video-section">
+            <h2>Видео</h2>
+            <p>Посмотрите наши видео:</p>
+            <iframe src="" id="video1" frameborder="0" allowfullscreen></iframe>
+            <iframe src="" id="video2" frameborder="0" allowfullscreen></iframe>
+            <iframe src="" id="video3" frameborder="0" allowfullscreen></iframe>
         </div>
+
+        <!-- Секция приглашения -->
+        <div class="invitation-section">
+            <h2>Приглашение</h2>
+            <button onclick="showInvitation()">Посмотреть приглашение</button>
+            <div id="invitation" style="display:none; margin-top:20px;">
+                <img src="ТАк.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
+            </div>
+        </div>
+        
+        <!-- Фотоальбом -->
         <div class="photo-gallery">
             <h2>Фотогалерея</h2>
             <div class="photo-item">
                 <img src="WhatsApp Image 2025-03-07 at 19.31.22.jpeg" alt="Фото 1">
+                <p>"Женщина – источник вдохновения и света."</p>
             </div>
             <div class="photo-item">
                 <img src="WhatsApp Image 2025-03-07 at 19.31.23.jpeg" alt="Фото 2">
+                <p>"Краса и нежность – это про вас!"</p>
             </div>
             <div class="photo-item">
                 <img src="WhatsApp Image 2025-03-07 at 19.31.23 (1).jpeg" alt="Фото 3">
+                <p>"Вы – наше счастье и радость!"</p>
             </div>
             <div class="photo-item">
                 <img src="WhatsApp Image 2025-03-07 at 19.31.24.jpeg" alt="Фото 4">
+                <p>"Каждый день с вами – праздник!"</p>
             </div>
             <div class="photo-item">
                 <img src="WhatsApp Image 2025-03-07 at 19.33.20.jpeg" alt="Фото 5">
+                <p>"Вы делаете мир ярче!"</p>
             </div>
             <div class="photo-item">
                 <img src="WhatsApp Image 2025-03-07 at 20.46.39.jpeg" alt="Фото 6">
+                <p>"Спасибо за вашу доброту и улыбки!"</p>
             </div>
             <div class="photo-item">
                 <img src="WhatsApp Image 2025-03-07 at 19.31.24 (1).jpeg" alt="Фото 7">
+                <p>"Вы достойны самого лучшего!"</p>
             </div>
         </div>
     </div>
