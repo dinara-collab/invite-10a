@@ -57,18 +57,35 @@
         .photo-gallery .photo-item {
             margin-bottom: 20px;
             text-align: center;
+            position: relative;
+            border: 5px solid #d63384;
+            padding: 10px;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
         }
         .photo-gallery img {
-            width: 300px;
+            width: 400px;
             height: auto;
             border-radius: 10px;
         }
         .photo-gallery p {
             font-style: italic;
             font-family: 'Brush Script MT', cursive;
-            font-size: 22px;
+            font-size: 24px;
             margin-top: 10px;
             color: #555;
+        }
+        .sticker {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #ffcc00;
+            color: #fff;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 50%;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -85,37 +102,29 @@
         <p><strong>Место:</strong> <a href="https://2gis.kz/qyzylorda/geo/70000001059087937" target="_blank">Ыдырысова 66, Кызылорда</a></p>
         <p><strong>Время:</strong> 15:00</p>
         <div id="invitation" style="display:none; margin-top:20px;">
-            <img src="invitation.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
+            <img src="ТАк.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
         </div>
         <div class="photo-gallery">
             <h2>Фотогалерея</h2>
             <div class="photo-item">
+                <span class="sticker">🌸</span>
                 <img src="WhatsApp Image 2025-03-07 at 19.31.23.jpeg" alt="Фото 1">
                 <p>"Женщина – это улыбка, свет и вдохновение."</p>
             </div>
             <div class="photo-item">
+                <span class="sticker">💖</span>
                 <img src="WhatsApp Image 2025-03-07 at 19.31.24.jpeg" alt="Фото 2">
                 <p>"Красота женщины в её глазах и доброте."</p>
             </div>
             <div class="photo-item">
+                <span class="sticker">✨</span>
                 <img src="WhatsApp Image 2025-03-07 at 19.31.24 (1).jpeg" alt="Фото 3">
                 <p>"Ты – воплощение нежности и любви."</p>
             </div>
             <div class="photo-item">
+                <span class="sticker">💐</span>
                 <img src="WhatsApp Image 2025-03-07 at 19.31.24 (2).jpeg" alt="Фото 4">
                 <p>"Сияй, ведь этот мир прекрасен благодаря тебе!"</p>
-            </div>
-            <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (3).jpeg" alt="Фото 5">
-                <p>"Твоя улыбка – луч солнца в пасмурный день."</p>
-            </div>
-            <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 19.33.20.jpeg" alt="Фото 6">
-                <p>"Женщина – это нежность, доброта и любовь."</p>
-            </div>
-            <div class="photo-item">
-                <img src="WhatsApp Image 2025-03-07 at 20.46.39.jpeg" alt="Фото 7">
-                <p>"Ты достойна восхищения каждый день!"</p>
             </div>
         </div>
     </div>
