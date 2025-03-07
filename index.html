@@ -50,12 +50,25 @@
         }
         .photo-gallery {
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo-gallery .photo-item {
+            margin-bottom: 20px;
+            text-align: center;
         }
         .photo-gallery img {
-            width: 100px;
-            height: 100px;
-            margin: 5px;
-            border-radius: 5px;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .photo-gallery p {
+            font-style: italic;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 22px;
+            margin-top: 10px;
+            color: #555;
         }
     </style>
 </head>
@@ -76,9 +89,34 @@
         </div>
         <div class="photo-gallery">
             <h2>Фотогалерея</h2>
-            <img src="photo1.jpg" alt="Фото 1">
-            <img src="photo2.jpg" alt="Фото 2">
-            <img src="photo3.jpg" alt="Фото 3">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-03-07 at 19.31.23.jpeg" alt="Фото 1">
+                <p>"Женщина – это улыбка, свет и вдохновение."</p>
+            </div>
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-03-07 at 19.31.24.jpeg" alt="Фото 2">
+                <p>"Красота женщины в её глазах и доброте."</p>
+            </div>
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (1).jpeg" alt="Фото 3">
+                <p>"Ты – воплощение нежности и любви."</p>
+            </div>
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (2).jpeg" alt="Фото 4">
+                <p>"Сияй, ведь этот мир прекрасен благодаря тебе!"</p>
+            </div>
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-03-07 at 19.31.24 (3).jpeg" alt="Фото 5">
+                <p>"Твоя улыбка – луч солнца в пасмурный день."</p>
+            </div>
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-03-07 at 19.33.20.jpeg" alt="Фото 6">
+                <p>"Женщина – это нежность, доброта и любовь."</p>
+            </div>
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-03-07 at 20.46.39.jpeg" alt="Фото 7">
+                <p>"Ты достойна восхищения каждый день!"</p>
+            </div>
         </div>
     </div>
     <script>
