@@ -3,50 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение на 8 марта</title>
+    <title>Приглашение на вечер 8 Марта</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #FFD1DC, #FFB6C1);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             text-align: center;
-            color: #fff;
+            background-color: #ffe6f2;
+            color: #333;
+            padding: 20px;
         }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 30%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .invite-text {
+            font-size: 20px;
+            margin: 20px 0;
         }
         .button {
             display: inline-block;
-            padding: 12px 20px;
-            font-size: 1.1em;
-            color: #fff;
-            background: #E75480;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #d63384;
             border: none;
-            border-radius: 8px;
+            border-radius: 5px;
             cursor: pointer;
             margin: 10px;
-            transition: 0.3s;
-            text-decoration: none;
         }
         .button:hover {
-            background: #C71585;
+            background-color: #b0256c;
+        }
+        .photo-gallery {
+            margin-top: 20px;
+        }
+        .photo-gallery img {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Приглашаем вас на праздник 8 марта!</h1>
-    <p>Место проведения: <strong>Ыдырысова 66</strong></p>
-    <a href="https://2gis.kz/almaty/search/Ыдырысова%2066" target="_blank" class="button">Посмотреть на карте</a>
+    <div class="container">
+        <h1>Приглашение на праздничный вечер 8 Марта</h1>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/video1" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/video2" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/video3" allowfullscreen></iframe>
+        </div>
+        <p class="invite-text">Дорогие гости! Приглашаем вас на праздничный вечер в честь 8 Марта.</p>
+        <button class="button" onclick="showInvitation()">Посмотреть приглашение</button>
+        <p><strong>Место:</strong> <a href="https://2gis.kz/qyzylorda/geo/70000001059087937" target="_blank">Ыдырысова 66, Кызылорда</a></p>
+        <p><strong>Время:</strong> 15:00</p>
+        <div id="invitation" style="display:none; margin-top:20px;">
+            <img src="invitation.jpg" alt="Приглашение" style="width:100%; max-width:600px; border-radius:10px;">
+        </div>
+        <div class="photo-gallery">
+            <h2>Фотогалерея</h2>
+            <img src="photo1.jpg" alt="Фото 1">
+            <img src="photo2.jpg" alt="Фото 2">
+            <img src="photo3.jpg" alt="Фото 3">
+        </div>
+    </div>
+    <script>
+        function showInvitation() {
+            document.getElementById('invitation').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
